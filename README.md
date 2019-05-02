@@ -1,7 +1,7 @@
 # prime-sieve
 Compare Sieve of Eratosthenes cleanliness and performance between python and ruby
 
-On my machine, it looks like Ruby python runs for 2.5 times longer than ruby.
+On my machine, it looks like python runs 2.5 times slower than ruby.
 
 ## Running:
 ```sh
