@@ -5,6 +5,8 @@ On my machine, it looks like Ruby python runs for 2.5 times longer than ruby.
 
 ## Running:
 ```sh
+make
+time ./csieve.out
 time python3 pysieve.py
 time ruby siever.rb
 ```
