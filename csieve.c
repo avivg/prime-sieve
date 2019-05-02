@@ -6,6 +6,17 @@ int max;
 char *primes;
 int next_prime;
 
+void init()
+{
+    max = 2000000;
+    next_prime = 1;
+    primes = (char*)malloc((max + 1) * sizeof(char));
+    if (!primes) {
+        exit(-1);
+    }
+    memset(primes, 1, max + 1);
+}
+
 void find_next_prime()
 {
     next_prime++;
@@ -42,12 +53,7 @@ long long sum_primes()
 
 int main()
 {
-    max = 2000000;
-    next_prime = 1;
-    primes = (char*)malloc((max + 1) * sizeof(char));
-    if (!primes)
-        return -1;
-    memset(primes, 1, max + 1);
+    init();
     printf("%llu\n", sum_primes());
     return 0;
 }
